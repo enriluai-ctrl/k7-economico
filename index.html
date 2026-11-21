@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JADEMIA Sentinel — Patrulla autónoma de seguridad | La versión económica del K7</title>
-<meta name="description" content="JADEMIA Sentinel: robot de patrulla autónoma con IA real, versión económica inspirada en el Knightscope K7. Desde US$350. Fabricado con componentes de nivel mundial, integrado en el Perú.">
-<meta property="og:title" content="JADEMIA Sentinel — Patrulla autónoma desde US$350">
-<meta property="og:description" content="El Knightscope K7 cuesta ~US$139,000 y solo se alquila en EE.UU. Nosotros construimos su versión económica con IA real: YOLO + visión nocturna + térmica + alertas WhatsApp.">
+<title>JADEMIA Sentinel — Patrulla autónoma como servicio | Seguridad perimetral 24/7</title>
+<meta name="description" content="JADEMIA Sentinel: el servicio de patrulla autónoma con IA real para almacenes, condominios e instituciones. Menos que un puesto de vigilancia 24h. Robot + instalación + alertas WhatsApp + mantenimiento incluidos.">
+<meta property="og:title" content="JADEMIA Sentinel — Patrulla autónoma como servicio">
+<meta property="og:description" content="Seguridad perimetral 24/7 con IA real, por menos de lo que cuesta un puesto de vigilancia. Sin comprar el robot: todo incluido en la mensualidad.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://robot.jademco.net/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A4%96%3C/text%3E%3C/svg%3E">
@@ -23,32 +23,31 @@
   h1,h2,h3{font-family:Georgia,'Times New Roman',serif}
   a{color:var(--gold);text-decoration:none}
 
-  /* NAV */
   nav{position:sticky;top:0;z-index:50;background:rgba(10,14,20,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
   nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
   .brand{font-weight:800;letter-spacing:.5px;font-size:17px;color:var(--txt)}
   .brand b{color:var(--gold)}
   nav .links{display:flex;gap:18px;font-size:14px}
   nav .links a{color:var(--mut)} nav .links a:hover{color:var(--gold2)}
-  @media(max-width:720px){nav .links{display:none}}
+  @media(max-width:860px){nav .links{display:none}}
 
-  /* HERO */
   header{position:relative;padding:84px 0 66px;text-align:center;
     background:radial-gradient(1200px 500px at 50% -80px,#1b2436 0%,var(--bg) 60%)}
   header::before{content:"";position:absolute;inset:0;opacity:.14;pointer-events:none;
     background-image:repeating-linear-gradient(0deg,transparent 0 34px,var(--line) 34px 35px),
                      repeating-linear-gradient(90deg,transparent 0 34px,var(--line) 34px 35px)}
   .kicker{display:inline-block;border:1px solid var(--gold);color:var(--gold2);padding:4px 14px;border-radius:999px;font-size:12.5px;letter-spacing:2px;margin-bottom:20px}
-  h1{font-size:clamp(34px,6vw,58px);line-height:1.12}
+  h1{font-size:clamp(34px,6vw,56px);line-height:1.12}
   h1 .g{color:var(--gold)}
-  .sub{color:var(--mut);font-size:clamp(15px,2.2vw,18.5px);max-width:760px;margin:18px auto 30px}
+  .sub{color:var(--mut);font-size:clamp(15px,2.2vw,18.5px);max-width:780px;margin:18px auto 30px}
   .price-line{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:32px}
-  .price-line .chip{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 20px;min-width:180px}
-  .chip .n{font-size:24px;font-weight:800;color:var(--gold)}
+  .price-line .chip{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 20px;min-width:190px}
+  .chip .n{font-size:22px;font-weight:800;color:var(--gold)}
   .chip .t{font-size:12px;color:var(--mut);letter-spacing:.4px}
   .cta{display:inline-block;background:linear-gradient(135deg,var(--gold),#c99a1e);color:#141003;font-weight:800;padding:14px 34px;border-radius:12px;font-size:16.5px;box-shadow:0 6px 24px rgba(232,185,60,.25)}
   .cta:hover{filter:brightness(1.07)}
   .cta.ghost{background:transparent;border:1.5px solid var(--line);color:var(--txt);margin-left:10px;box-shadow:none}
+  .cta.ghost:hover{border-color:var(--gold);color:var(--gold2)}
   @media(max-width:560px){.cta.ghost{margin-left:0;margin-top:10px}}
 
   section{padding:64px 0;border-top:1px solid var(--line)}
@@ -56,16 +55,55 @@
   h2{font-size:clamp(26px,4vw,38px);margin-bottom:14px}
   .lead{color:var(--mut);max-width:780px;margin-bottom:34px}
 
-  /* BENCHMARK */
+  /* SIM strip */
+  .sim{background:radial-gradient(900px 380px at 50% 120%,#1b2436 0%,var(--bg2) 70%);text-align:center}
+  .sim .shot{max-width:920px;width:100%;border:1px solid var(--line);border-radius:14px;margin:26px auto 6px;display:block;box-shadow:0 18px 50px rgba(0,0,0,.45)}
+  .sim .cap{font-size:12.5px;color:var(--mut);margin-bottom:26px}
+
+  /* SEGMENTS */
+  .seg3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  @media(max-width:900px){.seg3{grid-template-columns:1fr}}
+  .seg{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+  .seg .ico{font-size:28px;margin-bottom:10px}
+  .seg h3{font-size:18px;margin-bottom:4px}
+  .seg .who{font-size:12px;color:var(--mut);margin-bottom:12px}
+  .seg li{list-style:none;padding:6px 0;font-size:13.5px;color:var(--txt);border-top:1px dashed var(--line)}
+  .seg li::before{content:"▸ ";color:var(--gold);font-weight:900}
+
+  /* INCLUDES */
+  .inc{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  @media(max-width:900px){.inc{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:540px){.inc{grid-template-columns:1fr}}
+  .feat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+  .feat .ico{font-size:26px;margin-bottom:10px}
+  .feat h3{font-size:16px;margin-bottom:6px}
+  .feat p{font-size:13px;color:var(--mut)}
+
+  /* PLANES (sin precios) */
+  .plans{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:8px}
+  @media(max-width:900px){.plans{grid-template-columns:1fr}}
+  .plan{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px;position:relative;display:flex;flex-direction:column}
+  .plan.star{border-color:var(--gold);box-shadow:0 0 40px rgba(232,185,60,.10)}
+  .plan .tag{position:absolute;top:-12px;left:24px;background:var(--gold);color:#141003;font-weight:800;font-size:11.5px;padding:4px 12px;border-radius:999px;letter-spacing:1px}
+  .plan h3{font-size:20px}
+  .plan .use{font-size:12.5px;color:var(--mut);margin:2px 0 14px}
+  .plan .p{font-size:17px;font-weight:800;color:var(--gold)}
+  .plan ul{list-style:none;margin:16px 0 20px;font-size:14px;flex:1}
+  .plan li{padding:6px 0;color:var(--mut);border-top:1px dashed var(--line)}
+  .plan li::before{content:"· ";color:var(--gold);font-weight:900}
+  .plan .cta{display:block;text-align:center;padding:11px;font-size:14.5px}
+  .quote-note{font-size:13px;color:var(--mut);margin-top:18px}
+  .quote-note b{color:var(--gold2)}
+
+  /* GUARDIA VS */
   .vs{display:grid;grid-template-columns:1fr 90px 1fr;gap:0;align-items:stretch;margin-top:10px}
   @media(max-width:720px){.vs{grid-template-columns:1fr}.vs .mid{transform:rotate(90deg);margin:6px auto}}
   .vs .col{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px}
-  .vs .col.dark{opacity:.9}
   .vs .col.win{border-color:var(--gold);box-shadow:0 0 34px rgba(232,185,60,.08)}
   .vs .mid{display:flex;align-items:center;justify-content:center;font-family:Georgia,serif;font-size:26px;color:var(--gold);font-weight:800}
   .vs h3{font-size:20px;margin-bottom:4px}
   .vs .origin{font-size:12.5px;color:var(--mut);margin-bottom:14px}
-  .vs .big{font-size:34px;font-weight:800}
+  .vs .big{font-size:26px;font-weight:800}
   .vs .big.g{color:var(--gold)} .vs .big.r{color:var(--red)}
   .vs ul{list-style:none;margin-top:14px;font-size:14.5px}
   .vs li{padding:7px 0;border-top:1px dashed var(--line);color:var(--mut)}
@@ -74,32 +112,7 @@
   .vs li.no::before{content:"✘ ";color:var(--red)}
   .fineprint{font-size:12px;color:#67788f;margin-top:12px}
 
-  /* CAPAS / FEATURES */
-  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-  .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-  @media(max-width:900px){.grid3,.grid4{grid-template-columns:repeat(2,1fr)}}
-  @media(max-width:540px){.grid3,.grid4{grid-template-columns:1fr}}
-  .feat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
-  .feat .ico{font-size:26px;margin-bottom:10px}
-  .feat h3{font-size:16.5px;margin-bottom:6px}
-  .feat p{font-size:13.5px;color:var(--mut)}
-
-  /* PLANES */
-  .plans{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:8px}
-  @media(max-width:900px){.plans{grid-template-columns:1fr}}
-  .plan{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px;position:relative;display:flex;flex-direction:column}
-  .plan.star{border-color:var(--gold);box-shadow:0 0 40px rgba(232,185,60,.10)}
-  .plan .tag{position:absolute;top:-12px;left:24px;background:var(--gold);color:#141003;font-weight:800;font-size:11.5px;padding:4px 12px;border-radius:999px;letter-spacing:1px}
-  .plan h3{font-size:19px}
-  .plan .use{font-size:12.5px;color:var(--mut);margin:2px 0 14px}
-  .plan .p{font-size:30px;font-weight:800;color:var(--gold)}
-  .plan .p small{font-size:13px;color:var(--mut);font-weight:400}
-  .plan ul{list-style:none;margin:16px 0 20px;font-size:14px;flex:1}
-  .plan li{padding:6px 0;color:var(--mut);border-top:1px dashed var(--line)}
-  .plan li::before{content:"· ";color:var(--gold);font-weight:900}
-  .plan .cta{display:block;text-align:center;padding:11px;font-size:14.5px}
-
-  /* TABLA COMPARATIVA */
+  /* TABLE */
   .tbl{width:100%;border-collapse:collapse;font-size:14px;margin-top:6px}
   .tbl th,.tbl td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--line)}
   .tbl th{color:var(--gold2);font-size:12.5px;letter-spacing:1px;text-transform:uppercase}
@@ -120,7 +133,6 @@
   .metric .n{font-size:26px;font-weight:800;color:var(--gold)}
   .metric .t{font-size:12px;color:var(--mut)}
 
-  /* CTA FINAL */
   .final{background:radial-gradient(700px 300px at 50% 120%,#1b2436 0%,var(--bg) 65%);text-align:center}
   .final h2{font-size:clamp(28px,4.5vw,42px)}
   .final .lead{margin:14px auto 30px}
@@ -136,170 +148,212 @@
   <div class="wrap">
     <div class="brand"><b>JADEMIA</b>&nbsp;SENTINEL</div>
     <div class="links">
-      <a href="#vs">vs Knightscope</a>
-      <a href="#capacidades">Capacidades</a>
+      <a href="#simulador">Demo 3D</a>
+      <a href="#segmentos">Para quién</a>
+      <a href="#incluye">Qué incluye</a>
       <a href="#planes">Planes</a>
-      <a href="#comparativa">Comparativa</a>
+      <a href="#guardia">vs Guardia</a>
       <a href="#stack">Tecnología</a>
     </div>
-    <a class="cta" style="padding:9px 18px;font-size:14px" href="https://wa.me/51934554651?text=Hola,%20me%20interesa%20el%20robot%20JADEMIA%20Sentinel" target="_blank" rel="noopener">Cotizar</a>
+    <a class="cta" style="padding:9px 18px;font-size:14px" href="https://wa.me/51934554651?text=Hola,%20quiero%20una%20cotizaci%C3%B3n%20del%20servicio%20JADEMIA%20Sentinel" target="_blank" rel="noopener">Cotización gratuita</a>
   </div>
 </nav>
 
 <header>
   <div class="wrap">
-    <div class="kicker">PATRULLA AUTÓNOMA · IA REAL · HECHO PARA LATAM</div>
-    <h1>El guardia que nunca duerme,<br>a <span class="g">1% del costo</span> del K7.</h1>
-    <p class="sub">JADEMIA Sentinel es nuestra versión económica del Knightscope K7 — el robot de seguridad autónomo de EE.UU. que cuesta ~US$139,000 por unidad y solo se contrata como servicio. Nosotros construimos el mismo concepto con IA de última generación y componentes de nivel mundial, integrado y con soporte en el Perú.</p>
+    <div class="kicker">PATRULLA AUTÓNOMA COMO SERVICIO · SIN COMPRAR EL ROBOT</div>
+    <h1>Un robot patrulla tu perímetro,<br>pagas <span class="g">mensualidad</span>. Así de simple.</h1>
+    <p class="sub">JADEMIA Sentinel es el servicio de seguridad perimetral autónoma para almacenes, condominios e instituciones: un robot con IA real patrulla tu sitio 24/7, detecta personas y vehículos, disuade con luz y voz, y avisa a tu celular por WhatsApp al instante. Tú no compras hardware: la mensualidad incluye todo.</p>
     <div class="price-line">
-      <div class="chip"><div class="n">US$139,000</div><div class="t">Knightscope K7 (lista aprox.* + contrato anual)</div></div>
-      <div class="chip"><div class="n">US$350–1,200</div><div class="t">JADEMIA Sentinel · según plan</div></div>
-      <div class="chip"><div class="n">24/7</div><div class="t">Patrulla + alertas a tu WhatsApp</div></div>
+      <div class="chip"><div class="n">24/7</div><div class="t">Patrulla continua con autodock</div></div>
+      <div class="chip"><div class="n">TODO INCLUIDO</div><div class="t">Robot + instalación + mantenimiento</div></div>
+      <div class="chip"><div class="n">&lt; 1 PUESTO</div><div class="t">Menos que un puesto de vigilancia 24h</div></div>
     </div>
-    <a class="cta" href="https://wa.me/51934554651?text=Hola,%20quiero%20cotizar%20un%20JADEMIA%20Sentinel%20para%20mi%20instalaci%C3%B3n" target="_blank" rel="noopener">Cotizar mi Sentinel →</a>
-    <a class="cta ghost" href="#planes">Ver planes y precios</a>
+    <a class="cta" href="https://wa.me/51934554651?text=Hola,%20quiero%20una%20cotizaci%C3%B3n%20gratuita%20del%20servicio%20JADEMIA%20Sentinel%20para%20mi%20instalaci%C3%B3n" target="_blank" rel="noopener">Cotizar mi sitio — gratis →</a>
+    <a class="cta ghost" href="#simulador">▶ Ver el robot en 3D</a>
   </div>
 </header>
 
-<section id="vs">
+<section id="simulador" class="sim">
   <div class="wrap">
-    <div class="sec-tag">El benchmark</div>
-    <h2>K7 vs Sentinel: la misma idea, otra economía.</h2>
-    <p class="lead">Knightscope abrió el mercado de la "fuerza de seguridad autónoma": robots que patrullan, detectan y disuaden 24/7. Su lección es doble — funciona (sus clientes reportan menos denuncias) y cuesta una fortuna. Ahí entramos nosotros.</p>
-    <div class="vs">
-      <div class="col dark">
-        <h3>Knightscope K7 🇺🇸</h3>
-        <div class="origin">Sunnyvale, California · NASDAQ: KSCP · lanzado 2025-2026</div>
-        <div class="big r">~US$139,000*</div>
-        <ul>
-          <li class="no">No se vende: solo se <b>contrata como servicio</b> (robots + central humana 24/7 en EE.UU.)</li>
-          <li class="ok">360° HD + PTZ + térmica + lector de placas</li>
-          <li class="ok">16 km/h · off-road ligero · 2.95 m · 349 kg</li>
-          <li class="no">Disponible <b>solo en Estados Unidos</b></li>
-          <li class="no">Depende de su central remota en EE.UU.</li>
-        </ul>
-      </div>
-      <div class="mid">VS</div>
-      <div class="col win">
-        <h3>JADEMIA Sentinel 🇵🇪</h3>
-        <div class="origin">JADEM Corporation E.I.R.L. · Lima, Perú · 2026</div>
-        <div class="big g">desde US$350</div>
-        <ul>
-          <li class="ok">Se <b>compra</b>: tuyo, sin suscripción obligatoria</li>
-          <li class="ok">Detección con IA real (YOLO entrenado a tu sitio)</li>
-          <li class="ok">Visión nocturna RGB+IR · térmica opcional</li>
-          <li class="ok">Alertas en vivo a tu <b>WhatsApp</b>, talk-down bidireccional</li>
-          <li class="ok">Soporte local en Perú · escalar a tu medida</li>
-        </ul>
-      </div>
-    </div>
-    <p class="fineprint">*Precio de catálogo de terceros (Robolist.ai, oct-2026), no confirmado por Knightscope — ellos solo cotizan por briefing privado. Métricas del K7/la flota Knightscope (−46% denuncias, +27% arrestos, −68% citaciones) son cifras de marketing publicadas por el propio fabricante.</p>
+    <div class="sec-tag">Demo interactiva</div>
+    <h2>Muévelo tú mismo, antes de cotizar.</h2>
+    <p class="lead">Este es el simulador oficial del Sentinel: su patrulla geocercada alrededor de un almacén, sus sectores PTZ, su vista térmica, la base de autocarga y el protocolo de alerta con estrobos — todo en tiempo real, igual que lo verás instalado.</p>
+    <img class="shot" src="sim-card.png" alt="Simulador 3D del JADEMIA Sentinel patrullando un almacén" loading="lazy">
+    <div class="cap">Captura del simulador · la demo real corre en tu navegador, sin instalar nada</div>
+    <a class="cta" href="simulador.html" target="_blank" rel="noopener">▶ ABRIR SIMULADOR 3D</a>
   </div>
 </section>
 
-<section id="capacidades" style="background:var(--bg2)">
+<section id="segmentos" style="background:var(--bg2)">
   <div class="wrap">
-    <div class="sec-tag">Capacidades</div>
-    <h2>Los sentidos, módulo a módulo.</h2>
-    <p class="lead">Arma tu Sentinel con lo que tu instalación necesita. Cada sensor es un módulo probado con precio de referencia — nada de paquetes cerrados.</p>
-    <div class="grid3">
-      <div class="feat"><div class="ico">👁️</div><h3>Patrulla autónoma + IA</h3><p>Recorre rutas y detecta personas y vehículos con red neuronal YOLO re-entrenada con las fotos de TU sitio — no un detector genérico.</p></div>
-      <div class="feat"><div class="ico">🌙</div><h3>Visión nocturna RGB+IR</h3><p>Cámara binocular facial 2MP con infrarrojo: funciona en poca luz y permite reconocimiento facial opcional.</p></div>
-      <div class="feat"><div class="ico">🌡️</div><h3>Detección térmica</h3><p>Sensor MLX90640 (32×24) detecta personas por su calor — útil de noche, entre humo o detrás de obstáculos parciales.</p></div>
-      <div class="feat"><div class="ico">📢</div><h3>Talk-down bidireccional</h3><p>Tu operador habla por el robot y el visitante responde: disuasión activa igual que el K7.</p></div>
-      <div class="feat"><div class="ico">💬</div><h3>Alertas a WhatsApp</h3><p>La plataforma JADEMIA (ya operativa 24/7 en bot.jademco.net) envía alertas con foto al instante a tu celular.</p></div>
-      <div class="feat"><div class="ico">🖐️</div><h3>Acceso + paquete forense</h3><p>Huellero AS608 para control de acceso y luz UV 365nm + cámara para revelar huellas latentes en escenas (opcional).</p></div>
+    <div class="sec-tag">Para quién es</div>
+    <h2>Tres tipos de sitio. Un mismo guardián.</h2>
+    <p class="lead">El Sentinel se configura con las rutas, los horarios y las alertas que tu instalación necesita. Estos son los tres casos donde más rinde.</p>
+    <div class="seg3">
+      <div class="seg"><div class="ico">🏭</div><h3>Almacén grande / Planta</h3><div class="who">Perímetros extensos, patio de carga, zonas de retirada</div><ul>
+        <li>Perímetro patrullado de noche sin turno humano</li>
+        <li>Intrusos detectados con IA antes de llegar al galpón</li>
+        <li>Video y registro de cada ronda: auditoría completa</li>
+        <li>Alerta al celular del jefe de planta al instante</li>
+      </ul></div>
+      <div class="seg"><div class="ico">🏠</div><h3>Condominio / Residencial</h3><div class="who">Estacionamientos, áreas comunes, accesos</div><ul>
+        <li>Presencia visible que disuade, día y noche</li>
+        <li>Rondas programables en horas críticas</li>
+        <li>Alerta directa a administración por WhatsApp</li>
+        <li>Registro de cada ronda para el comité</li>
+      </ul></div>
+      <div class="seg"><div class="ico">🏛️</div><h3>Institución / Campus</h3><div class="who">Colegios, universidades, hospitales, entidades</div><ul>
+        <li>Rondas en horas vacías y noches</li>
+        <li>Recorrido auditable que respalda contratos y seguros</li>
+        <li>Talk-down en vivo ante cualquier incidente</li>
+        <li>Trabaja junto a tu personal de seguridad</li>
+      </ul></div>
     </div>
   </div>
 </section>
 
-<section id="planes">
+<section id="incluye">
+  <div class="wrap">
+    <div class="sec-tag">La mensualidad</div>
+    <h2>Todo incluido. Nada por separado.</h2>
+    <p class="lead">Como el modelo Machine-as-a-Service que consolidó a los robots de seguridad en el mundo: una suscripción, cero sorpresas.</p>
+    <div class="inc">
+      <div class="feat"><div class="ico">🤖</div><h3>El robot en tu sitio</h3><p>Chasis todo terreno 4×4 con mástil sensor, entregado e instalado por nuestro equipo.</p></div>
+      <div class="feat"><div class="ico">🧠</div><h3>IA entrenada a tu medida</h3><p>Re-entrenamos la detección con las fotos de TU instalación: personas, vehículos y objetos que TU operación necesita ver.</p></div>
+      <div class="feat"><div class="ico">💬</div><h3>Alertas WhatsApp 24/7</h3><p>Cada detección llega a tu celular con foto, al instante, por la plataforma JADEMIA que ya opera 24/7.</p></div>
+      <div class="feat"><div class="ico">🗺️</div><h3>Rutas y horarios a pedido</h3><p>Geocerca dibujada en tu plano, rondas programables, estación de autocarga incluida.</p></div>
+      <div class="feat"><div class="ico">🔧</div><h3>Mantenimiento y repuestos</h3><p>Revisión periódica, limpieza de sensores, repuestos y ajustes — incluidos.</p></div>
+      <div class="feat"><div class="ico">🔁</div><h3>Reemplazo garantizado</h3><p>Si el robot se avería, lo reemplazamos. Tu perímetro nunca queda sin patrulla.</p></div>
+      <div class="feat"><div class="ico">📊</div><h3>Reportes de ronda</h3><p>Registro auditable de cada recorrido y evento: evidencia para seguros, comités y contratos.</p></div>
+      <div class="feat"><div class="ico">🛠️</div><h3>Soporte local</h3><p>Equipo en Lima. Sin depender de un central remoto en otro continente ni de licencias en dólares.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="planes" style="background:var(--bg2)">
   <div class="wrap">
     <div class="sec-tag">Planes</div>
-    <h2>Tres niveles de chassis, un solo cerebro.</h2>
-    <p class="lead">Precios de referencia (Alibaba, nov-2026, MOQ 1, sin envío — se cotiza en firme por pedido). El cerebro IA es nuestro: pipeline propio de visión entrenado con tus fotos.</p>
+    <h2>Eliges el turno. Nosotros operamos todo.</h2>
+    <p class="lead">Cotización gratuita por sitio: depende del tamaño del perímetro, los horarios y el nivel de alerta que necesitas. Contrato desde 12 meses, facturación mensual.</p>
     <div class="plans">
       <div class="plan">
-        <h3>Guardia</h3>
-        <div class="use">Interiores, patios lisos, estacionamientos techados</div>
-        <div class="p">US$350–500 <small>· S/ 1,300–1,900</small></div>
+        <h3>Turno Noche</h3>
+        <div class="use">La franja de mayor riesgo, cubierta por robot</div>
+        <div class="p">Patrulla 12 h · de noche</div>
         <ul>
-          <li>Chasis WAVE ROVER 4WD (Waveshare)</li>
-          <li>Cámara + detección personas/objetos</li>
-          <li>PIR de despertar + alertas WhatsApp</li>
-          <li>Ideal: 1 local, depósitos, retail</li>
+          <li>Rondas continuas 21:00–09:00</li>
+          <li>Detección IA + alertas WhatsApp</li>
+          <li>Reporte de ronda cada mañana</li>
+          <li>Base de autocarga incluida</li>
         </ul>
-        <a class="cta" href="https://wa.me/51934554651?text=Me%20interesa%20el%20plan%20GUARDIA%20del%20Sentinel" target="_blank" rel="noopener">Cotizar Guardia</a>
+        <a class="cta" href="https://wa.me/51934554651?text=Me%20interesa%20el%20plan%20TURNO%20NOCHE%20de%20JADEMIA%20Sentinel" target="_blank" rel="noopener">Cotizar Turno Noche</a>
       </div>
       <div class="plan star">
         <div class="tag">MÁS PEDIDO</div>
-        <h3>Patrulla</h3>
-        <div class="use">Exterior todo terreno: perimetrales, campus, plantas</div>
-        <div class="p">US$1,000–1,200 <small>· S/ 3,800–4,500</small></div>
+        <h3>24 / 7</h3>
+        <div class="use">Perímetro custodiado el día completo, todos los días</div>
+        <div class="p">Patrulla continua + autodock</div>
         <ul>
-          <li>Chasis UGV-8 todo terreno (exterior/interior)</li>
-          <li>Todo lo del plan Guardia</li>
-          <li>Térmica MLX90640 + talk-down</li>
-          <li>Re-entrenamiento YOLO con tu sitio</li>
+          <li>Todo lo del Turno Noche</li>
+          <li>Patrulla 24 h con autocarga automática</li>
+          <li>Talk-down en vivo ante incidentes</li>
+          <li>Térmica nocturna activada</li>
+          <li>Reemplazo garantizado</li>
         </ul>
-        <a class="cta" href="https://wa.me/51934554651?text=Me%20interesa%20el%20plan%20PATRULLA%20del%20Sentinel" target="_blank" rel="noopener">Cotizar Patrulla</a>
+        <a class="cta" href="https://wa.me/51934554651?text=Me%20interesa%20el%20plan%2024-7%20de%20JADEMIA%20Sentinel" target="_blank" rel="noopener">Cotizar 24/7</a>
       </div>
       <div class="plan">
-        <h3>Industrial</h3>
-        <div class="use">Plantas, minería, logistics hubs — clima severo</div>
-        <div class="p">US$3,200–3,800 <small>· presupuesto</small></div>
+        <h3>Flota Empresa</h3>
+        <div class="use">Dos o más robots operando en conjunto</div>
+        <div class="p">Multi-sitio · precio por volumen</div>
         <ul>
-          <li>Chasis TinS-8 orugas IP65 (40–100 kg)</li>
-          <li>ROS2 · CAN/RS485 · 0–8 km/h</li>
-          <li>Térmica LWIR pro (640×512) opcional</li>
-          <li>Integración CCTV / central existente</li>
+          <li>2+ robots coordinados</li>
+          <li>Integración con tu CCTV actual</li>
+          <li>Panel de monitoreo propio</li>
+          <li>SLA de respuesta dedicado</li>
         </ul>
-        <a class="cta" href="https://wa.me/51934554651?text=Me%20interesa%20el%20plan%20INDUSTRIAL%20del%20Sentinel" target="_blank" rel="noopener">Cotizar Industrial</a>
+        <a class="cta" href="https://wa.me/51934554651?text=Me%20interesa%20el%20plan%20FLOTA%20EMPRESA%20de%20JADEMIA%20Sentinel" target="_blank" rel="noopener">Cotizar Flota</a>
       </div>
     </div>
+    <p class="quote-note">💡 <b>Instalación + entrenamiento de IA:</b> se cotiza por sitio (mapeo de rutas, geocerca y re-entrenamiento con tus fotos). Los primeros clientes de cada distrito acceden a <b>precio fundador</b>.</p>
   </div>
 </section>
 
-<section id="comparativa" style="background:var(--bg2)">
+<section id="guardia">
   <div class="wrap">
-    <div class="sec-tag">Cara a cara</div>
-    <h2>Comparativa técnica honesta.</h2>
-    <p class="lead">Sin humo: esto es lo que cada uno tiene. El K7 es una máquina superior — para perimetrales gigantes en EE.UU. con presupuesto de multinacional. Para el 90% de instalaciones en Perú y Latinoamérica, Sentinel cubre lo esencial a una fracción.</p>
+    <div class="sec-tag">La comparación honesta</div>
+    <h2>Robot vs puesto de vigilancia.</h2>
+    <p class="lead">No reemplaza a tu gente: reemplaza las HORAS de ronda que hoy nadie quiere hacer. Un vigilante humano decide y actúa; el Sentinel patrulla, detecta, disuade y avisa — sin pausas, sin rotación, sin noches vacías.</p>
+    <div class="vs">
+      <div class="col win">
+        <h3>JADEMIA Sentinel 🇵🇪</h3>
+        <div class="origin">Servicio mensual · todo incluido · Lima</div>
+        <div class="big g">Menos que un puesto 24h</div>
+        <ul>
+          <li class="ok">Patrulla geocercada sin descanso, sin rotación</li>
+          <li class="ok">Detección IA con foto al WhatsApp al instante</li>
+          <li class="ok">Registro auditable de cada ronda y evento</li>
+          <li class="ok">Disuasión visible: estrobos, voz, presencia</li>
+          <li class="ok">Mantenimiento, repuestos y reemplazo incluidos</li>
+        </ul>
+      </div>
+      <div class="mid">VS</div>
+      <div class="col">
+        <h3>Puesto de vigilancia 24h</h3>
+        <div class="origin">Mercado Lima 2026: S/ 6,600–12,000/mes con IGV</div>
+        <div class="big r">S/ 6,600–12,000/mes</div>
+        <ul>
+          <li class="ok">Juicio humano para decidir y actuar</li>
+          <li class="no">Ronda a pie: cansancio, pausas, cobertura parcial</li>
+          <li class="no">Rotación de personal y reposición constante</li>
+          <li class="no">Sin registro video de cada vuelta</li>
+          <li class="no">Costo que sube cada año (sueldos, beneficios)</li>
+        </ul>
+      </div>
+    </div>
+    <p class="fineprint">Tarifas del mercado limeño de vigilancia privada 2026 (puestos 24 h, con IGV) citadas de fuentes públicas del sector. El Sentinel complementa a tu personal: el robot detecta e informa, la gente decide y actúa — el estándar de la industria.</p>
+  </div>
+</section>
+
+<section id="k7" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="sec-tag">Referencia de mercado</div>
+    <h2>Lo mismo que en EE.UU., a precio peruano.</h2>
+    <p class="lead">El Knightscope K7 — el robot de seguridad autónomo más conocido del mundo — valida el modelo que traemos al Perú. La diferencia está en el precio de acceso.</p>
     <div style="overflow-x:auto">
     <table class="tbl">
-      <tr><th></th><th>Knightscope K7</th><th>JADEMIA Sentinel</th></tr>
-      <tr><td>Precio</td><td class="k7">~US$139,000* (no se vende; contrato ASF)</td><td class="sn"><b>US$350–3,800</b> (compra directa)</td></tr>
-      <tr><td>Disponibilidad</td><td class="k7">Solo EE.UU. · early access</td><td class="sn"><b>Perú y LATAM</b> · importación directa</td></tr>
-      <tr><td>Velocidad</td><td class="k7">Hasta 16 km/h</td><td class="sn">0–8 km/h (según chasis)</td></tr>
-      <tr><td>Detección</td><td class="k7">Personas, vehículos, placas (LPR)</td><td class="sn"><b>Personas y objetos a medida</b> (YOLO); placas en hoja de ruta</td></tr>
-      <tr><td>Cámaras</td><td class="k7">360° HD + PTZ + térmica</td><td class="sn">RGB+IR facial · térmica opcional · PTZ opcional</td></tr>
-      <tr><td>IA / cerebro</td><td class="k7">Propietaria + central remota EE.UU.</td><td class="sn"><b>YOLO local (Jetson)</b> o IA en la nube · datos en tu infra</td></tr>
-      <tr><td>Alertas</td><td class="k7">Plataforma Signals (licencia)</td><td class="sn"><b>WhatsApp nativo</b> (JADEMIA 24/7)</td></tr>
+      <tr><th></th><th>Knightscope K7 (EE.UU.)</th><th>JADEMIA Sentinel (Perú)</th></tr>
+      <tr><td>Modelo</td><td class="k7">Servicio anual (ASF), no se vende</td><td class="sn"><b>Servicio mensual (RaaS)</b>, sin compra</td></tr>
+      <tr><td>Precio de acceso</td><td class="k7">~US$139,000 por unidad* (lista aprox.)</td><td class="sn"><b>Acceso con mensualidad</b> — sin CAPEX</td></tr>
+      <tr><td>Cobertura</td><td class="k7">Solo Estados Unidos</td><td class="sn"><b>Perú</b>, con soporte local en Lima</td></tr>
+      <tr><td>Detección</td><td class="k7">Personas, vehículos, placas</td><td class="sn"><b>Personas y objetos a medida</b> (IA entrenada en tu sitio)</td></tr>
+      <tr><td>Cámaras</td><td class="k7">360° HD + PTZ + térmica</td><td class="sn">PTZ 360° HD + térmica + IR nocturna</td></tr>
+      <tr><td>Alertas</td><td class="k7">Plataforma propia (licencia)</td><td class="sn"><b>WhatsApp nativo</b>, sin licencias extra</td></tr>
       <tr><td>Talk-down</td><td class="k7">✔</td><td class="sn">✔</td></tr>
-      <tr><td>Tamaño / peso</td><td class="k7">2.95 m · 349 kg</td><td class="sn">Compacto (según chasis, 20–100 kg de carga)</td></tr>
-      <tr><td>Forense (huellas latentes)</td><td class="k7">✘</td><td class="sn">✔ opcional (UV 365nm + revelado digital)</td></tr>
+      <tr><td>Velocidad</td><td class="k7">Hasta 16 km/h</td><td class="sn">Hasta 8 km/h (según chasis)</td></tr>
     </table>
     </div>
-    <p class="fineprint">*Catálogo tercero no confirmado. Sentinel es un producto en desarrollo activo (prototipo de visión funcional probado; integración móvil en curso). Precios de componentes: Alibaba nov-2026, por confirmar en cotización con envío a Lima.</p>
+    <p class="fineprint">*Precio de catálogo de terceros (oct-2026), no confirmado por Knightscope. Métricas publicadas por el propio fabricante: −46% denuncias, +27% arrestos, −68% citaciones en sus despliegues. Sentinel no está afiliado a Knightscope Inc.; la comparación es informativa, con fuentes públicas (nov-2026).</p>
   </div>
 </section>
 
 <section id="stack">
   <div class="wrap">
     <div class="sec-tag">Tecnología</div>
-    <h2>Un pipeline de IA que aprende de TU instalación.</h2>
-    <p class="lead">El secreto del Sentinel no es el chasis — es el entrenamiento: un modelo visión de fronteras etiqueta tus fotos y un detector YOLO ligero aprende de él. El resultado corre en el robot, sin depender de la nube.</p>
+    <h2>Una IA que aprende TU instalación.</h2>
+    <p class="lead">El secreto del Sentinel no es el chasis: es el entrenamiento. Un modelo visión de fronteras etiqueta las fotos de tu sitio y un detector YOLO ligero aprende de él. El resultado corre a bordo del robot, sin depender de la nube.</p>
     <div class="flow">
-      <div class="step"><div class="num">1</div><h3>Fotos de tu sitio</h3><p>300–1000 por objeto de interés (personas, vehículos, puertas, maquinaria).</p></div>
-      <div class="step"><div class="num">2</div><h3>Maestro etiqueta</h3><p>Modelo visión de última generación autolabela el dataset — sin horas de rotulado manual.</p></div>
+      <div class="step"><div class="num">1</div><h3>Fotos de tu sitio</h3><p>300–1000 por objeto de interés: puertas, patios, maquinaria, accesos.</p></div>
+      <div class="step"><div class="num">2</div><h3>Maestro etiqueta</h3><p>Modelo visión de última generación autolabela el dataset — sin horas de rotulado.</p></div>
       <div class="step"><div class="num">3</div><h3>Alumno aprende</h3><p>YOLOv8n entrena en horas y queda pesando solo 6.5 MB.</p></div>
       <div class="step"><div class="num">4</div><h3>Despliegue</h3><p>El cerebro Jetson del robot detecta en tiempo real, 100% local.</p></div>
     </div>
     <div class="metrics">
       <div class="metric"><div class="n">0.83</div><div class="t">mAP50 — precisión de la demo interna</div></div>
       <div class="metric"><div class="n">11.5 ms</div><div class="t">por imagen (≈300× más rápido que el maestro)</div></div>
-      <div class="metric"><div class="n">36 s</div><div class="t">de entrenamiento en la demo (GPU)</div></div>
       <div class="metric"><div class="n">24/7</div><div class="t">plataforma de alertas JADEMIA ya operativa</div></div>
+      <div class="metric"><div class="n">100%</div><div class="t">detección local: tus datos no salen del sitio</div></div>
     </div>
   </div>
 </section>
@@ -307,8 +361,8 @@
 <section class="final">
   <div class="wrap">
     <div class="sec-tag">Siguiente paso</div>
-    <h2>Agenda una demo.<br>Tu sitio puede ser el primero.</h2>
-    <p class="lead">Estamos seleccionando instalaciones piloto en Lima para la primera flota. La demo de visión es gratuita: nos envías fotos de tu instalación y te mostramos a tu robot detectándola.</p>
+    <h2>Agenda la demo gratuita.<br>Tu sitio puede ser el primero.</h2>
+    <p class="lead">Estamos seleccionando instalaciones piloto en Lima. Nos envías las fotos, entrenamos la IA con tu perímetro y te mostramos al Sentinel patrullando TU sitio antes de firmar nada.</p>
     <a class="cta" href="https://wa.me/51934554651?text=Quiero%20agendar%20la%20demo%20gratuita%20del%20JADEMIA%20Sentinel" target="_blank" rel="noopener">Agendar demo gratuita →</a>
   </div>
 </section>
@@ -321,9 +375,9 @@
       Plataforma de mensajería IA: bot.jademco.net
     </div>
     <div style="text-align:right">
-      Actualizado: noviembre 2026<br>
-      <a href="#vs">Volver arriba ↑</a>
-      <div class="disclaimer">JADEMIA Sentinel no está afiliado a Knightscope, Inc. "Knightscope K7" es marca de su titular; se referencia únicamente como comparativo de mercado con fines informativos, citando fuentes públicas (nov-2026). Precios de referencia sujetos a cotización.</div>
+      Actualizado: noviembre 2026 · <a href="simulador.html">Simulador 3D</a><br>
+      <a href="#simulador">Volver arriba ↑</a>
+      <div class="disclaimer">JADEMIA Sentinel no está afiliado a Knightscope, Inc. "Knightscope K7" es marca de su titular; se referencia como comparativo de mercado con fines informativos, citando fuentes públicas. El robot detecta, disuade e informa; la respuesta física corresponde siempre a personal humano. Producto en fase de despliegue piloto — las capacidades finales se confirman por sitio en la cotización. Precios de referencia de terceros sujetos a sus fuentes.</div>
     </div>
   </div>
 </footer>
